@@ -1,5 +1,6 @@
 pipeline {
     agent any
+	stages {
 	stage('Build') {
 		echo "Build"
 	}
@@ -9,4 +10,5 @@ pipeline {
 	stage('Prod') {
 		echo "Prod"
 	}
+}
 }
